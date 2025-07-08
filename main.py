@@ -13,7 +13,7 @@ app = FastAPI(
 # === Allow Frontend Access ===
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ⛔ Replace with your frontend URL in prod
+    allow_origins=["https://emotionapp.vercel.app"],  # ⛔ Replace with your frontend URL in prod
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
